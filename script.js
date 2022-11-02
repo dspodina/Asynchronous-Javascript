@@ -1,19 +1,19 @@
 // Task 1
-// const button = document.querySelector(".button");
-// button.onclick = function () {
-//   fetch("becode.json")
-//     .then((j) => j.json())
-//     .then((data) => renderList(data));
-// };
-// function renderList(list) {
-//   const ul = document.createElement("ul");
-//   document.body.append(ul);
-//   list.forEach((rule) => {
-//     const li = document.createElement("li");
-//     li.innerText = rule;
-//     ul.append(li);
-//   });
-// }
+const button = document.querySelector(".button");
+button.onclick = function () {
+  fetch("becode.json")
+    .then((j) => j.json())
+    .then((data) => renderList(data));
+};
+function renderList(list) {
+  const ul = document.createElement("ul");
+  document.body.append(ul);
+  list.forEach((rule) => {
+    const li = document.createElement("li");
+    li.innerText = rule;
+    ul.append(li);
+  });
+}
 
 // Task 2
 const button = document.querySelector(".button");
